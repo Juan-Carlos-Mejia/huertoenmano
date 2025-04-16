@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huerto en Mano - Cargando</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-start;
+      padding: 1rem 0 1rem 4rem;
+      border-bottom: 2px solid #b7e4c7;
+      font-weight: 500;
+    }
+
+    header nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    header nav a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .loading-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .plant-icon {
+      font-size: 4rem;
+      color: #99CC67;
+      animation: bounce 2s infinite;
+    }
+
+    .loading-message {
+      font-size: 1.5rem;
+      color: #244123;
+      max-width: 300px;
+      line-height: 1.4;
+    }
+
+    .loading-indicator {
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(153, 204, 103, 0.3);
+      border-radius: 50%;
+      border-top-color: #99CC67;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 2px solid #b7e4c7;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Acerca de</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="loading-content">
+      <i class="fas fa-seedling plant-icon"></i>
+      <p class="loading-message">Cuidemos juntos del medio ambiente y aprendamos juntos</p>
+    </div>
+
+    <div class="loading-indicator">
+      <div class="spinner"></div>
+      <span>Iniciando Sesion...</span>
+    </div>
+  </main>
+
+  <footer>
+    Agile Development Team © 2025
+  </footer>
+
+  <script>
+    // Redirección después de 3 segundos
+    setTimeout(function() {
+      // Cambia esta URL por donde quieras redirigir después de la carga
+      window.location.href = "inicio.html"; 
+    }, 3000);
+  </script>
+</body>
+</html>

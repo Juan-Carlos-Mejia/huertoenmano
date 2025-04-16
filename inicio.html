@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo-inicio.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-home nav-logo" style="font-size: 1.2rem; color: #7AC943;"></i>
+                  </a>
+                <a href="#" class="nav-link">Mis Jardines</a>
+                <a href="#" class="nav-link">Mis Plantas</a>
+                <a href="#" class="nav-link">Marketplace</a>
+            </div>
+            <div class="nav-right">
+                <span class="user-greeting">Hola, [nombre del usuario]</span>
+                <button class="profile-button" title="Perfil">
+                    <i class="fas fa-user"></i>
+                  </button>
+                  
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="section-header">
+                <h2>Jardines recientes</h2>
+                <button class="create-garden" onclick="location.href='nuevos-jardines.html'">Crear Jardín</button>
+            </div>
+
+            <div class="gardens-grid">
+
+                <!-- Tarjeta de jardín -->
+                <div class="garden-card">
+                  <div class="garden-icon">
+                    <i class="fas fa-location-dot"></i>
+                  </div>
+                  <div class="garden-info">
+                    <h3>[Nombre]</h3>
+                    <p>[Ubicación]</p>
+                    <p>[Estado]</p>
+                  </div>
+                  <div class="garden-action">
+                    <a href="detalle-jardin.html" class="arrow-circle" title="Ver más">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="garden-card">
+                    <div class="garden-icon">
+                      <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div class="garden-info">
+                      <h3>[Nombre]</h3>
+                      <p>[Ubicación]</p>
+                      <p>[Estado]</p>
+                    </div>
+                    <div class="garden-action">
+                      <a href="detalle-jardin.html" class="arrow-circle" title="Ver más">
+                        <i class="fas fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  
+              
+                <div class="garden-card">
+                  <div class="garden-icon">
+                    <i class="fas fa-location-dot"></i>
+                  </div>
+                  <div class="garden-info">
+                    <h3>[Nombre]</h3>
+                    <p>[Ubicación]</p>
+                    <p>[Estado]</p>
+                  </div>
+                  <div class="garden-action">
+                    <a href="detalle-jardin.html" class="arrow-circle" title="Ver más">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              
+              </div>
+              
+
+            <h2>Búsquedas recientes</h2>
+            <div class="searches-grid">
+                <div class="search-card">
+                  <div class="search-image"></div>
+                  <div class="search-info">
+                    <h3>[Nombre]</h3>
+                    <p>[Categoría]</p>
+                    <p>[Fecha]</p>
+                  </div>
+                  <a href="detalle-busqueda.html" class="search-arrow-circle" title="Ver más">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+                <div class="search-card">
+                    <div class="search-image"></div>
+                    <div class="search-info">
+                      <h3>[Nombre]</h3>
+                      <p>[Categoría]</p>
+                      <p>[Fecha]</p>
+                    </div>
+                    <a href="detalle-busqueda.html" class="search-arrow-circle" title="Ver más">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="search-card">
+                    <div class="search-image"></div>
+                    <div class="search-info">
+                      <h3>[Nombre]</h3>
+                      <p>[Categoría]</p>
+                      <p>[Fecha]</p>
+                    </div>
+                    <a href="detalle-busqueda.html" class="search-arrow-circle" title="Ver más">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                <!-- Repite para más tarjetas -->
+              </div>
+              
+        </main>
+
+        <footer class="footer">
+            <p>Agile Development Team © 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
